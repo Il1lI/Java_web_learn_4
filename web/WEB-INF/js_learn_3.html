@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>o((>ω< ))o</title>
+    <style>
+        #result {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text" id="number">
+    <input type="submit" id="submit">
+</div>
+<div id="result">
+
+</div>
+<script>
+    //获取用户输入框标签
+    var input = document.getElementById("number");
+    //获取结果显示标签
+    var re = document.getElementById("result");
+    //获取按钮标签
+    var btn = document.getElementById("submit");
+
+    //给按钮配置点击方法
+    btn.onclick = function () {
+        //1.获取输入框的值
+        var score = input.value;
+        console.log(score);
+        //2.作比较
+        if (score == "和云鹏") {
+            //3.将结果赋值给div标签
+            re.innerHTML = "鸽人啦！！！";
+            console.log(re);
+        } else {
+            re.innerHTML = "没意思！！！";
+            console.log(re)
+        }
+    }
+</script>
+</body>
+</html>
