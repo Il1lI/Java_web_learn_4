@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>o((>ω< ))o</title>
+    <style>
+        .test {
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<button id = "btn">摸一下和云鹏</button>
+<button id = "change">踢一脚和云鹏</button>
+<div id = "container"></div>
+<script>
+    //循环添加标签
+    var btn = document.getElementById("btn");
+    var cont = document.getElementById("container");
+    btn.onclick = function () {
+        var  d = document.createElement("div");
+        d.innerHTML = "咕~咕~咕~";
+        d.className = "test";
+        cont.appendChild(d);
+    };
+    document.getElementById("change").onclick = function () {
+        var els = document.getElementsByClassName("test");
+        for (var i = 0; i < els.length; i++){
+            els[i].innerText = i;
+        }
+    };
+</script>
+</body>
+</html>
