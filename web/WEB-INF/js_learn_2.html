@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>o((>ω< ))o</title>
+</head>
+<body>
+<div id="test">
+    咕咕咕
+</div>
+<script>
+    //js语法
+    //变量
+    var a = 0;
+    a = a + 1;
+    //alert(a);
+    console.log(a);
+
+    var s = "gugugu";
+    console.log(s+a);
+    console.log(s.length);
+    document.write("<hr>"+ s);
+
+    var b = 5 > 3;
+    console.log(b);
+
+    //运算符
+    //1.算术运算符（+ - * / - - + +）
+    var m = 2;
+    var n = 3;
+    //m + + + n = ( m + + ) + n;
+    console.log(m+++n);
+    //2.关系运算符（> >= < <= == !=）（js专有：===）
+    console.log(2 === "2");
+    //3.逻辑运算符（&& || ！）
+
+    //js操作标签
+    //1.获得标签
+    var oDiv = document.getElementById("test");
+    console.log(oDiv);
+    //2.设置标签
+    oDiv.style.backgroundColor = "green";
+    oDiv.style.width = "300px";
+
+    var con = true;
+    oDiv.onclick = function () {
+        if (con) {
+            oDiv.style.backgroundColor = "black";
+        }else{
+            oDiv.style.backgroundColor = "white";
+        }
+        con = !con;
+    };
+
+    //分支
+    var x = 13 ;
+    var y = 4 ;
+    if ( x > y ) {
+        console.log(" x 大于 y ");
+    }
+</script>
+</body>
+</html>
